@@ -16,6 +16,15 @@ html {
    height: 100vh; 
 }
 
+.mobile-nav.mobile-close {
+   transform: translateX(110%);
+   overflow: hidden;
+}
+
+.mobile-nav.mobile-open {
+   transform: translateX(0);
+}
+
 .spinner {
     width: 14.4px;
     height: 14.4px;

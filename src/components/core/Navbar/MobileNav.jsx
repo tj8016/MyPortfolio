@@ -2,10 +2,10 @@ import React from 'react'
 import { FiTwitter, FiLinkedin, FiGithub, FiInstagram } from "react-icons/fi";
 import { SiLeetcode } from "react-icons/si";
 
-export const MobileNav = () => {
+export const MobileNav = ({mobileNav}) => {
   return (
-    <div
-        className="absolute top-full left-0 right-0 pointer-events-auto backdrop-blur-lg transition-all ease-in-out duration-300 md:hidden mobile-close"
+    <div id='mobile-nav'
+        className={`mobile-nav absolute top-full h-[100vh] left-20 right-0 pointer-events-auto backdrop-blur-lg transition-all ease-in duration-300 md:hidden ${mobileNav ? "mobile-open" : "mobile-close"}`}
         style={{boxShadow : 'rgba(157, 157, 157, 0.2) 0px 4px 10px'}}>
         <div className="flex flex-col py-6 gap-y-4">
             <div className="navlist">
