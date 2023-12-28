@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Education } from './core/QualificationSection/Education';
 import { Work } from './core/QualificationSection/Work';
+import { FaGraduationCap, FaLaptopCode } from "react-icons/fa6";
 
 export const Qualification = () => {
     const [active , setActive] = useState('education');
@@ -23,14 +24,14 @@ export const Qualification = () => {
 
                 <div className="qualification-content flex flex-col gap-y-7 w-[90%] md:w-[50%] lg:w-[40%]">
                     <div className="qualification__tabs flex justify-evenly items-center gap-x-6">
-                        <div className={`qualification-button font-rubik text-lg md:text-xl xl:text-2xl font-semibold cursor-pointer transition-all hover:text-thirdColor active ${active === 'education' ? 'text-thirdColor' : 'text-firstColor'}`}
+                        <div className={`qualification-button flex items-center gap-x-2 font-rubik text-lg md:text-xl xl:text-2xl font-semibold cursor-pointer transition-all hover:text-thirdColor active ${active === 'education' ? 'text-thirdColor' : 'text-firstColor'}`}
                            value="education" onClick={handleTabClick}>
-                            <i className="uil uil-graduation-cap qualification__icon text-2xl md:text-3xl"></i>
+                            <FaGraduationCap className='text-3xl'/>
                             Education
                         </div>
-                        <div className={`qualification-button font-rubik text-lg md:text-xl xl:text-2xl font-semibold cursor-pointer transition-all hover:text-thirdColor active ${active === 'work' ? 'text-thirdColor' : 'text-firstColor'}`}
+                        <div className={`qualification-button flex items-center gap-x-2 font-rubik text-lg md:text-xl xl:text-2xl font-semibold cursor-pointer transition-all hover:text-thirdColor active ${active === 'work' ? 'text-thirdColor' : 'text-firstColor'}`}
                             value="work" onClick={handleTabClick} >
-                            <i className="uil uil-briefcase-alt qualification__icon text-2xl md:text-3xl"></i>
+                            <FaLaptopCode className='text-3xl'/>
                             Work
                         </div>
                     </div>

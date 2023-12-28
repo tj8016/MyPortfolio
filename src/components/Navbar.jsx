@@ -1,8 +1,10 @@
-import React  from 'react'
+import React, { useState }  from 'react'
 import { FiTwitter, FiLinkedin, FiGithub, FiInstagram } from "react-icons/fi";
 import { SiLeetcode } from "react-icons/si";
+import { MobileNav } from './core/Navbar/MobileNav.jsx';
 
 export const Navbar = () => {
+    const [mobileNav, setMobileNav] = useState(false);
     return (
         <header id="nav-bar" className="fixed w-[100%] top-0 z-[1000] bg-bgColor flex flex-col items-center justify-center"
             style={{boxShadow : 'rgba(157, 157, 157, 0.2) 0px 4px 10px'}}
@@ -63,12 +65,19 @@ export const Navbar = () => {
                 </div>
 
                 <div id="toggle"
-                    className="toggle mobile-close relative flex h-[52px] w-[60px] cursor-pointer flex-col items-end justify-between p-[0.8rem] transition-all duration-300 ease-in-out md:hidden">
+                    className="toggle mobile-close relative flex h-[52px] w-[60px] cursor-pointer flex-col items-end justify-between p-[0.8rem] transition-all duration-300 ease-in-out md:hidden"
+                    onClick={() => setMobileNav(!mobileNav)}
+                    >
                     <span className="first-toggle w-10 rounded-md py-[2px] false bg-black transition-all duration-300"></span>
                     <span className="second-toggle w-8 py-[2px] rounded-md bg-black transition-all duration-300"></span>
                     <span className="third-toggle w-6 false rounded-md bg-black py-[2px] transition-all duration-300"></span>
                 </div>
             </nav>
+            <div>
+                {
+                    mobileNav && <MobileNav/>
+                }
+            </div>
         </header>
     )
 }
