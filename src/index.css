@@ -17,12 +17,12 @@ html {
 }
 
 .mobile-nav.mobile-close {
-   transform: translateX(110%);
+   transform: translateY(-110%);
    overflow: hidden;
 }
 
 .mobile-nav.mobile-open {
-   transform: translateX(0);
+   transform: translateY(0);
 }
 
 .spinner {

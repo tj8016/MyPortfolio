@@ -5,8 +5,7 @@ import { SiLeetcode } from "react-icons/si";
 export const MobileNav = ({mobileNav}) => {
   return (
     <div id='mobile-nav'
-        className={`mobile-nav absolute top-full h-[100vh] left-20 right-0 pointer-events-auto backdrop-blur-lg transition-all ease-in duration-300 md:hidden ${mobileNav ? "mobile-open" : "mobile-close"}`}
-        style={{boxShadow : 'rgba(157, 157, 157, 0.2) 0px 4px 10px'}}>
+        className={`mobile-nav absolute top-full left-0 right-0 pointer-events-auto backdrop-blur-lg transition-all ease-in-out duration-300 md:hidden ${mobileNav ? "mobile-open" : "mobile-close"}`}>
         <div className="flex flex-col py-6 gap-y-4">
             <div className="navlist">
                 <ul className="mobile-navlist flex flex-col justify-between items-center gap-y-5 px-3 ">

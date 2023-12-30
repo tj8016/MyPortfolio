@@ -6,11 +6,11 @@ import { MobileNav } from './core/Navbar/MobileNav.jsx';
 export const Navbar = () => {
     const [mobileNav, setMobileNav] = useState(false);
     return (
-        <header id="nav-bar" className="fixed w-[100%] top-0 z-[1000] bg-bgColor flex flex-col items-center justify-center"
+        <header id="nav-bar" className="fixed w-[100%] top-0 z-[1000] bg-bgColor  flex flex-col items-center justify-center"
             style={{boxShadow : 'rgba(157, 157, 157, 0.2) 0px 4px 10px'}}
             >
             <nav
-                className="w-[100%] max-w-[1300px] h-[100%] py-4 px-4 mx-auto flex flex-row justify-between items-center">
+                className="w-[100%] max-w-[1300px] h-[100%] bg-bgColor z-40 py-4 px-4 mx-auto flex flex-row justify-between items-center">
                 <div className="nav-logo flex justify-between items-center gap-x-3">
                     <img className='w-11' src='https://res.cloudinary.com/dbvdqcii9/image/upload/v1692768439/My%20Portfolio/logoimg_qpefh2.png' alt='logo'/>
                     <h1 className="logo font-rubik text-3xl font-bold leading-5 text-firstColor">T<span
@@ -73,7 +73,7 @@ export const Navbar = () => {
                     <span className="third-toggle w-6 false rounded-md bg-black py-[2px] transition-all duration-300"></span>
                 </div>
             </nav>
-            <MobileNav mobileNav={mobileNav}/>
+            <MobileNav mobileNav={mobileNav} className=""/>
         </header>
     )
 }
