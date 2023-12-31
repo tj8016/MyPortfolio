@@ -73,7 +73,7 @@ export const Navbar = () => {
                     <span className="third-toggle w-6 false rounded-md bg-black py-[2px] transition-all duration-300"></span>
                 </div>
             </nav>
-            <MobileNav mobileNav={mobileNav} className=""/>
+            <MobileNav mobileNav={mobileNav} setMobileNav={setMobileNav}/>
         </header>
     )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import { FiTwitter, FiLinkedin, FiGithub, FiInstagram } from "react-icons/fi";
 import { SiLeetcode } from "react-icons/si";
 
-export const MobileNav = ({mobileNav}) => {
+export const MobileNav = ({mobileNav, setMobileNav}) => {
   return (
     <div id='mobile-nav'
         className={`mobile-nav absolute top-full left-0 right-0 pointer-events-auto backdrop-blur-lg transition-all ease-in-out duration-300 md:hidden ${mobileNav ? "mobile-open" : "mobile-close"}`}>
@@ -10,22 +10,22 @@ export const MobileNav = ({mobileNav}) => {
             <div className="navlist">
                 <ul className="mobile-navlist flex flex-col justify-between items-center gap-y-5 px-3 ">
                     <li>
-                        <a href='#home'
+                        <a href='#home' onClick={() => setMobileNav(!mobileNav)}
                         className="home font-rubik py-6 text-lg leading-5 transition-all hover:text-thirdColor">Home</a>
                     </li>
-                    <li><a href='#about'
+                    <li><a href='#about' onClick={() => setMobileNav(!mobileNav)}
                         className="font-rubik py-6 text-lg leading-5 transition-all hover:text-thirdColor">About</a>
                     </li>
-                    <li><a href="#skills" id="skills-btn"
+                    <li><a href="#skills" id="skills-btn" onClick={() => setMobileNav(!mobileNav)}
                         className="font-rubik py-6 text-lg leading-5 transition-all hover:text-thirdColor">Skills</a>
                     </li>
-                    <li><a href="#qualification" id="skills-btn"
+                    <li><a href="#qualification" id="skills-btn" onClick={() => setMobileNav(!mobileNav)}
                         className="font-rubik py-6 text-lg leading-5 transition-all hover:text-thirdColor">Qualification</a>
                     </li>
-                    <li><a href="#projects" id="project-btn"
+                    <li><a href="#projects" id="project-btn" onClick={() => setMobileNav(!mobileNav)}
                         className="font-rubik py-6 text-lg leading-5 transition-all hover:text-thirdColor">Projects</a>
                     </li>
-                    <li><a href="#contact" id="contact-btn"
+                    <li><a href="#contact" id="contact-btn" onClick={() => setMobileNav(!mobileNav)}
                         className="font-rubik py-6 text-lg leading-5 transition-all hover:text-thirdColor">Contact</a>
                     </li>
                 </ul>
