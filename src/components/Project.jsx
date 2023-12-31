@@ -2,9 +2,9 @@ import React from 'react'
 import {projectData} from '../data/ProjectData'
 import { Card } from './core/ProjectSection/Card'
 
-export const Project = () => {
+export const Project = ({id}) => {
   return (
-    <section id="projects">
+    <section id={id}>
         <div class="w-[100%] bg-bgColor relative ">
             <img class="absolute -z-[100] top-8 left-0 " src="assets/images/projects.png" alt=""/>
             <img class="absolute -z-[100] bottom-8 right-0 rotate-180" src="assets/images/projects.png" alt=""/>

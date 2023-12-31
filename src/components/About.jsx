@@ -5,9 +5,9 @@ import CV from "../assets/other/TOHIDUJJAMAN HOQUE.pdf"
 import image1 from '../assets/images/aboutsection1.svg'
 import image2 from '../assets/images/aboutsection2.svg'
 
-export const About = () => {
+export const About = ({id}) => {
     return (
-        <section name="about" className="about w-[100%] bg-bgColor" id='about'>
+        <section name="about" className="about w-[100%] bg-bgColor" id={id}>
             <div className="about-container wrapper w-[95%] max-w-[1300px] mx-auto flex flex-col justify-between items-center gap-11 py-14">
                 <div className="about-heading flex flex-col gap-2 justify-center items-center">
                     <h1 className="font-rubik text-2xl font-semibold flex flex-row gap-x-2 md:text-4xl xl:text-4xl">

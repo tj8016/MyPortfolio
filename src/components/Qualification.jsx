@@ -3,7 +3,7 @@ import { Education } from './core/QualificationSection/Education';
 import { Work } from './core/QualificationSection/Work';
 import { FaGraduationCap, FaLaptopCode } from "react-icons/fa6";
 
-export const Qualification = () => {
+export const Qualification = ({id}) => {
     const [active , setActive] = useState('education');
 
     const handleTabClick = (e) => {
@@ -11,7 +11,7 @@ export const Qualification = () => {
         setActive(value);
     }
     return (
-        <section id="qualification" className="bg-bgColor2">
+        <section id={id} className="bg-bgColor2">
             <div
                 className="qualification-wrapper w-[95%] max-w-[1300px] mx-auto flex flex-col justify-between items-center gap-y-6 py-14">
                 <div className="qualification-heading flex flex-col justify-center items-center">

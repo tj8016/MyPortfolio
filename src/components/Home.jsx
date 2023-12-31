@@ -4,10 +4,11 @@ import { BsArrowDownShort } from "react-icons/bs";
 import { MdOutlineMouse } from "react-icons/md";
 import bggradient from "../assets/images/homegradient.svg"
 import { TypingAnimation } from './common/TypingAnimation';
+import { Link } from "react-scroll";
 
-export const Home = () => {
+export const Home = ({id}) => {
     return (
-        <div id='home' name='home' className="home w-[100%] bg-bgColor relative">
+        <div id={id} name='home' className="home w-[100%] bg-bgColor relative">
             <img className="absolute top-0 right-0" src={bggradient} alt=""/>
             <div className="wrapper w-[95%] max-w-[1300px] mx-auto flex flex-col-reverse justify-between items-center gap-y-11 pt-[100px] pb-11 md:flex-row">
                 <div className="home-content flex flex-row justify-center items-center md:w-[50%]">
@@ -22,17 +23,29 @@ export const Home = () => {
                             Youtuber
                         </p>
                         <div className="home-button flex items-center gap-x-1 mt-5">
-                            <a href="#contact"
+                            <Link  
+                                activeClass="active"
+                                to="contact"
+                                spy={true}
+                                smooth={true}
+                                offset={-84}
+                                duration={800}
                                 className="flex gap-x-2 text-[#fff] items-center bg-firstColor xl:text-lg text-sm xl:px-7 px-5 xl:py-4 py-2 border border-firstColor rounded-md  transition-all hover:bg-secondColor">
                                 Contact Me<VscSend className='text-1xl'/>
-                            </a>
+                            </Link>
                             <div className="home__scroll">
-                                <a href="#about"
+                                <Link
+                                    activeClass="active"
+                                    to="about"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-84}
+                                    duration={800}
                                     className="flex items-center gap-x-2 xl:text-lg text-sm xl:px-7 xl:py-4 py-2 transition-all hover:translate-y-1">
                                     <MdOutlineMouse className='text-2xl text-firstColor'/>
                                     <span className="home__scroll-name">Scroll down</span>
                                     <BsArrowDownShort className='text-2xl text-firstColor'/>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

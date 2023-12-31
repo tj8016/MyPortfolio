@@ -5,7 +5,7 @@ import { LuPhoneCall } from "react-icons/lu";
 import { MdOutlineMailOutline,MdOutlineLocationOn } from "react-icons/md";
 import bgImage from '../assets/images/bg-Contact.svg'
 
-export const Contact = () => {
+export const Contact = ({id}) => {
     const form = useRef();
     const sendEmail = async(e) => {
         e.preventDefault();
@@ -21,7 +21,7 @@ export const Contact = () => {
         form.current.reset();
     };
     return (
-        <section id="contact" className="w-100%">
+        <section id={id} className="w-100%">
             <div className="relative overflow-y-hidden">
                 <img className="-z-[100] bg-bgColor2 absolute top-0 left-0 h-[900px] w-[100vw] object-cover -translate-y-52 md:-translate-y-72"
                     src={bgImage} alt="" />

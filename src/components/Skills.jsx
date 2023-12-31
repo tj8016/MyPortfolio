@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {AccordianBar} from './core/SkillsSection/AccordianBar.jsx';
 import {skills} from '../data/SkillsData.js'
 
-export const Skills = () => {
+export const Skills = ({id}) => {
     const [isActive, setIsActive] = useState(Array(0))
     const handleActive = (id) => {
         setIsActive(
@@ -12,7 +12,7 @@ export const Skills = () => {
         )
     }
     return (
-        <section id="skills" className="w-[100%] bg-bgColor2">
+        <section id={id} className="w-[100%] bg-bgColor2">
             <div
                 className="z-[100] skills-wrapper wrapper w-[95%] max-w-[1300px] mx-auto flex flex-col justify-between items-center gap-11 py-14">
                 <div className="skills-heading flex flex-col justify-center items-center">

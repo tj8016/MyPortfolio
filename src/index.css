@@ -8,8 +8,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    scroll-behavior: smooth;
-    scroll-padding: var(--scroll-padding, 84px);
 }
 
 html {
@@ -23,6 +21,15 @@ html {
 
 .mobile-nav.mobile-open {
    transform: translateY(0);
+}
+
+.nav-item > .active {
+   color: #fa4e02;
+   border-bottom: 4px solid #fa4e02;
+}
+
+.mobile-nav-item > .active {
+   color: #fa4e02;
 }
 
 .spinner {

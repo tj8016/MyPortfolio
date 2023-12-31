@@ -16,7 +16,7 @@ export const projectData = [
     {
         projectName : "Weather App",
         description : "The Weather Web App is a responsive and visually appealing application developed using HTML, CSS, and JavaScript. It integrates a weather API to fetch real-time weather data, including temperature, humidity, and wind speed. With user-friendly features like search and error handling, it demonstrates my proficiency in front-end development and API integration",
-        imageLink : "https://res.cloudinary.com/dbvdqcii9/image/upload/v1702373393/My%20Portfolio/ProjectsImages/DeliciousZone_r5yrlz.png", 
+        imageLink : "https://res.cloudinary.com/dbvdqcii9/image/upload/v1703957355/My%20Portfolio/ProjectsImages/Weathearapp_wfvo9w.png", 
         link : "https://weatherappbytj.netlify.app/",
         githubLink : "https://github.com/tj8016/Weather-app",
     },
