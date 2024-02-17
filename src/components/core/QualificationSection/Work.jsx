@@ -10,9 +10,9 @@ export const Work = () => {
                     <div></div>
 
                     <div className="flex flex-col justify-center items-center ">
-                        <span
-                            className="qualification__rounder inline-block h-3 w-3 rounded-full bg-firstColor"></span>
+                        <span className="qualification__rounder inline-block h-3 w-3 rounded-full bg-firstColor"></span>
                         <span className="qualification__line w-[2px] h-full bg-firstColor"></span>
+                        <span className="qualification__rounder inline-block h-3 w-3 rounded-full bg-firstColor"></span>
                     </div>
                     <div className="flex flex-col">
                         <h3
